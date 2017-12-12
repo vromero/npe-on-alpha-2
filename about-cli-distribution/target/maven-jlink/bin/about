@@ -1,0 +1,5 @@
+#!/bin/sh
+JLINK_VM_OPTIONS=
+DIR=`dirname $0`
+$DIR/java $JLINK_VM_OPTIONS -m com.mulesoft.about.cli.jar/com.mulesoft.about.cli.Main $@
+

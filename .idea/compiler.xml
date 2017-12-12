@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="about-cli" />
+        <module name="about-cli-app" />
+        <module name="about-cli-distribution" />
+        <module name="about-cli-distribution-jmod" />
+        <module name="mod-jlink" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="about-cli" target="1.9" />
+      <module name="about-cli-app" target="1.9" />
+      <module name="about-cli-distribution" target="1.9" />
+      <module name="about-cli-distribution-jmod" target="1.9" />
+      <module name="com.soebes.nine.jar" target="1.9" />
+      <module name="com.soebes.nine.one" target="1.9" />
+      <module name="com.soebes.nine.two" target="1.9" />
+      <module name="mod-jlink" target="1.9" />
+      <module name="parent" target="1.9" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
