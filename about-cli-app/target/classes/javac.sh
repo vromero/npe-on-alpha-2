@@ -1,1 +1,0 @@
-/bin/sh -c cd /home/victor/src/mulesoft-labs/ABOUT-cli/about-cli-app && /opt/jdk-9/bin/javac @/home/victor/src/mulesoft-labs/ABOUT-cli/about-cli-app/target/classes/org.codehaus.plexus.compiler.javac.JavacCompiler1180408164885198654arguments

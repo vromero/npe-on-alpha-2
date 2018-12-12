@@ -11,12 +11,25 @@
   <packaging>jlink</packaging>
   <artifactId>about-cli-distribution</artifactId>
 
-  <dependencies>
-    <dependency>
-      <groupId>com.mulesoft.about</groupId>
-      <artifactId>about-cli-app</artifactId>
-      <version>${project.version}</version>
-      <type>jmod</type>
-    </dependency>
-  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jlink-plugin</artifactId>
+        <version>3.0.0-alpha-2-SNAPSHOT</version>
+        <extensions>true</extensions>
+        <configuration>
+          <modulePaths>
+            <modulePath>${project.parent.basedir}/about-cli-distribution-jmod/target/jmods</modulePath>
+          </modulePaths>
+          <addModules>
+            <addModule>com.mulesoft.about.cli</addModule>
+          </addModules>
+          <noHeaderFiles>true</noHeaderFiles>
+          <noManPages>true</noManPages>
+          <stripDebug>true</stripDebug>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

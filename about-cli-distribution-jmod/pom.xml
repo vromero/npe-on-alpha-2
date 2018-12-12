@@ -25,6 +25,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jmod-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <classPath>${project.parent.basedir}/about-cli-app/target/about-cli-app-1.0-SNAPSHOT.jar</classPath>
+                </configuration>
                 <executions>
                     <execution>
                         <id>list</id>
